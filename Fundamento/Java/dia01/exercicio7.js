@@ -20,9 +20,9 @@ if (grade < 0 || grade > 100) {
     console.log('c');
 } else if (grade >= 60) {
     console.log('d');
-}else if (grade >= 50) {
+} else if (grade >= 50) {
     console.log('e');
-}else {
+} else {
     console.log('f');
 }
 

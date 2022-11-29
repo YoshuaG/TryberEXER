@@ -31,26 +31,27 @@
 let inss;
 let ir;
 const salgrosso = 3300.00;
-if (salgrosso <= 1556.94){
+if (salgrosso <= 1556.94) {
     inss = salgrosso * 0.08;
-}else if (salgrosso <= 2594.92){
+} else if (salgrosso <= 2594.92) {
     inss = salgrosso * 0.09;
-}else if (salgrosso <= 5189.82){
+} else if (salgrosso <= 5189.82) {
     inss = salgrosso * 0.11;
-}else {
+} else {
     inss = 570.88;
 }
+// variavel de total
 
 const salbase = salgrosso - inss;
-if (salbase <= 1903.98){
+if (salbase <= 1903.98) {
     ir = 0;
-}else if (salbase <= 2826.65) {
-    ir = (salbase *0.075) - 142.80;
-}else if (salbase <= 3751.05){
-    ir = (salbase * 0.15) - 354.80;  
-}else if (salbase <= 4664.68){
+} else if (salbase <= 2826.65) {
+    ir = (salbase * 0.075) - 142.80;
+} else if (salbase <= 3751.05) {
+    ir = (salbase * 0.15) - 354.80;
+} else if (salbase <= 4664.68) {
     ir = (salbase * 0.225) - 636.13;
-}else {
-    ir = (salbase * 0.275) - 869,36;
+} else {
+    ir = (salbase * 0.275) - 869, 36;
 }
 console.log("salário:" + (salbase - ir));
