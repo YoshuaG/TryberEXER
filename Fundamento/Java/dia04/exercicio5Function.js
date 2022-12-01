@@ -11,4 +11,4 @@ function maiorindice(number){
     }
     return maiorindice;
 }
-console.log(maiorindice([5, 4, 11, 28, 12]));
+console.log(maiorindice([2, 3, 6, 7, 10, 1]));
